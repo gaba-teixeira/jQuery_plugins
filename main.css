@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #192a56;
+  padding-top: 16px;
+  color: #fff;
+}
+
+header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 4px;
+}
+
+.hamburger-menu {
+  width: 32px;
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  display: block;
+  margin-bottom: 4px;
+}
+
+nav {
+  background-color: #575fcf;
+  padding: 16px 0;
+  display: none;
+}
+
+nav li {
+  list-style: none;
+  display: inline;
+  margin-right: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#contact {
+  background-color: #fff;
+  padding: 40px 20px;
+  color: #192a56;
+}
+
+#contact h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #192a56;
+  text-align: center;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contact label {
+  text-align: left;
+  font-weight: bold;
+  color: #192a56;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #575fcf;
+  background-color: #ffffff;
+  border-radius: 5px;
+  color: #192a56;
+  font-size: 16px;
+  resize: none;
+}
+
+#contact input::placeholder,
+#contact textarea::placeholder {
+  color: #aaa;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  border-color: #575fcf;
+  outline: none;
+}
+
+#contact button {
+  padding: 12px;
+  background-color: #575fcf;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+  background-color: #4048bf;
+}
+
+#contact .error {
+  font-size: 12px;
+  color: red;
+}

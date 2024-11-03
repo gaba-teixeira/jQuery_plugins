@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ebac Motors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <h1>EBAC Motors</h1>
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <ul>
+            <li>
+              <a href="#">Sobre</a>
+            </li>
+            <li>
+              <a href="#">Em destaque</a>
+            </li>
+            <li>
+              <a href="#">Promoções</a>
+            </li>
+            <li>
+              <a href="#">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div id="carousel">
+      <img src="./images/slide1.png" alt="Carroda Porsche" />
+      <img src="./images/slide2.png" alt="Carroda BMW" />
+      <img src="./images/slide3.png" alt="Carroda Ford" />
+    </div>
+    <section id="contact">
+      <div class="container">
+        <h2>Entre em Contato</h2>
+        <form>
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" />
+
+          <label for="phone">Telefone:</label>
+          <input type="tel" id="phone" name="phone" />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+
+          <label for="vehicle">Veículo de Interesse:</label>
+          <input type="text" id="vehicle" name="vehicle" />
+
+          <label for="message">Mensagem:</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./main.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+  </body>
+</html>
