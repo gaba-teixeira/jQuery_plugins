@@ -9,6 +9,8 @@ $(document).ready(function () {
   });
 
   $("#phone").mask("(00) 00000-0000");
+  $("#cpf").mask("000.000.000-00");
+  $("#cep").mask("00000-000");
 
   $("form").validate({
     rules: {
@@ -24,6 +26,17 @@ $(document).ready(function () {
         email: true,
       },
 
+      cep: {
+        required: true,
+      },
+      cpf: {
+        required: true,
+      },
+
+      endereco: {
+        required: true,
+      },
+
       message: {
         required: true,
       },
@@ -33,6 +46,9 @@ $(document).ready(function () {
       email: "Esse campo é obrigatório",
       phone: "Esse campo é obrigatório",
       message: "Esse campo é obrigatório",
+      cep: "Esse campo é obrigatório",
+      cpf: "Esse campo é obrigatório",
+      endereco: "Esse campo é obrigatório",
     },
 
     submitHandler: function (form) {
